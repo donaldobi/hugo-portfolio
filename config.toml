@@ -1,0 +1,22 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Donald Obi - Portfolio"
+theme = ""
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/#portfolio"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 3
+
+[params]
+  description = "Web development and design projects by Donald Obi"
+  author = "Donald Obi"
