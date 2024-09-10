@@ -1,0 +1,62 @@
+{{ define "main" }}
+    {{ partial "homehero.html" . }}
+
+    <!-- Portfolio Section -->
+    <section class="page-section bg-dark-1 light-content" id="portfolio">
+        <div class="container position-relative">
+            <!--Section Title -->
+            <div class="row mb-5">
+                <div class="col-md-10 col-lg-8 text-start">
+                    <h2 class="section-title-large font-alt uppercase mb-md-80 mb-sm-40">
+                        <span class="overflow-hidden wow charsAnimIn-1" data-splitting="chars">Selected Projects</span>
+                    </h2>
+                </div>
+            </div>
+            <!-- End Section Title -->
+
+            <!-- Works Filter -->
+            <div class="works-filter mb-60 mb-sm-40 z-index-1">
+                <a href="#" class="filter active" role="button" aria-pressed="true" data-filter="*">All works</a>
+                {{ $tags := slice }}
+                {{ range .Site.RegularPages }}
+                    {{ range .Params.tags }}
+                        {{ $tags = $tags | append . }}
+                    {{ end }}
+                {{ end }}
+                {{ range ($tags | uniq) }}
+                    <a href="#{{ . | urlize }}" class="filter" role="button" aria-pressed="false" data-filter=".{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            </div>
+            <!-- End Works Filter -->
+
+            <!-- Works Grid -->
+            <div class="row gx-5 mt-n50 mt-sm-n30 mb-50 mb-sm-30" id="work-grid">
+                {{ range .Site.RegularPages }}
+                    <!-- Work Item (Filtered) -->
+                    <div class="portfolio-item col-lg-4 mt-50 mt-sm-30 mix {{ range .Params.tags }}{{ . | urlize }} {{ end }}">
+                        <div class="portfolio-item-img">
+                            <a href="{{ .Permalink }}" class="work-ext-link">
+                                {{ with index .Params.images 0 }}
+                                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                                {{ end }}
+                            </a>
+                        </div>
+                        <div class="portfolio-item-info">
+                            {{ range .Params.tags }}
+                                <span class="portfolio-item-tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        <h3 class="portfolio-item-title"><a href="{{ .Permalink }}" class="work-ext-link">{{ .Title }}</a></h3>
+                        <p>{{ .Description | truncate 100 }}</p>
+                    </div>
+                    <!-- End Work Item -->
+                {{ end }}
+            </div>
+            <!-- End Works Grid -->
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    {{ partial "cta.html" . }}
+    {{ partial "contact.html" . }}
+{{ end }}
