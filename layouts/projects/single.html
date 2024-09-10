@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+{{ partial "projecthero.html" . }}
+
 <section id="project" class="section page-section bg-dark-1 light-content">
     <div class="container relative">
         <h1 class="hs-title-2 font-alt uppercase mb-40">{{ .Title }}</h1>
@@ -50,4 +53,11 @@
         </div>
     </div>
 </section>
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 white" />
+<!-- End Divider -->
+
+{{ partial "related.html" . }}
+
 {{ end }}
