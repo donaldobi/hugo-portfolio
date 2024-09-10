@@ -23,3 +23,33 @@ go.work.sum
 
 # env file
 .env
+
+# Hugo default output directory
+/public
+
+# Hugo generated resources directory
+/resources
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# Dependency directories (if using npm or yarn)
+/node_modules
+
+# Environment variables
+.env
+
+# Hugo's cache directory
+/.hugo_build.lock
+
+# Temporary files
+*.log
+*.tmp
+
+# If using Go modules
+/vendor/

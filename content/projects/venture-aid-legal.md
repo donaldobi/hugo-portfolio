@@ -6,6 +6,6 @@ description: "Conversion-optimized website for a law firm, with focus on paid se
 tags: ["Wordpress", "Web Design"]
 livesite: "https://www.ventureaidlegal.com/"
 images:
-  - src: "images/venture-aid/venture-aid.jpg"
+  - src: "/images/venture-aid/venture-aid.jpg"
     alt: "Venture Aid Legal Homepage"
 ---

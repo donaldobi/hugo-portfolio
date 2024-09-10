@@ -6,6 +6,6 @@ description: "E-commerce wbsite design using WordPress and Woocommerce to create
 tags: ["eCommerce", "WooCommerce", "SEO"]
 livesite: "https://www.keziafoods.com.ng/"
 images:
-  - src: "images/kezia-foods/kezia-foods.jpg"
+  - src: "/images/kezia-foods/kezia-foods.jpg"
     alt: "Kezia Foods Homepage"
 ---

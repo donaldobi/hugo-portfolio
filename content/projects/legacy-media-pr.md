@@ -6,6 +6,6 @@ description: "Responsive website for a public relations and reputation managemen
 tags: ["Wordpress", "Web Design"]
 livesite: "https://legacypr.com.ng/"
 images:
-  - src: "images/legacy/legacy-pr.jpg.jpg"
+  - src: "/images/legacy/legacy-pr.jpg"
     alt: "Legacy Media PR"
 ---

@@ -37,7 +37,7 @@
                         <div class="portfolio-item-img">
                             <a href="{{ .Permalink }}" class="work-ext-link">
                                 {{ with index .Params.images 0 }}
-                                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                                    <img src="{{ .src }}" alt="{{ .alt }}" width="402" height="271" style="object-fit: cover; object-position: center top;" />
                                 {{ end }}
                             </a>
                         </div>

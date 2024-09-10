@@ -6,6 +6,6 @@ description: "Modern, interactive website showcasing event spaces and services. 
 tags: ["Elementor", "Wordpress", "Web Design"]
 livesite: "https://www.ronniedeevents.com.ng/"
 images:
-  - src: "images/ronnie-dee/ronnie-dee.jpg"
+  - src: "/images/ronnie-dee/ronnie-dee.jpg"
     alt: "Ronnie Dee Events Homepage"
 ---
