@@ -4,21 +4,22 @@
 
 <section id="project" class="section page-section bg-dark-1 light-content">
     <div class="container relative">
-        <h1 class="hs-title-2 font-alt uppercase mb-40">{{ .Title }}</h1>
+        <!-- <h1 class="hs-title-2 font-alt uppercase mb-40">{{ .Title }}</h1> -->
         
         <div class="row mb-80 mb-sm-40">
             <div class="col-md-6 mb-sm-40">
                 <h2 class="h3 font-alt mb-20">Project Details</h2>
                 <div class="row">
                     <div class="col-sm-4">Date:</div>
-                    <div class="col-sm-8">{{ .Date.Format "January 2, 2006" }}</div>
+                    <div class="col-sm-8">{{ .Date.Format "2006" }}</div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-sm-4">Technology:</div>
                     <div class="col-sm-8">
-                        {{ range .Params.tags }}
-                        <span class="tag">{{ . }}</span>
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if $index }}, {{ end }}
+                            <span class="tag">{{ $tag }}</span>
                         {{ end }}
                     </div>
                 </div>
@@ -27,10 +28,10 @@
                     <div class="col-sm-4">Services:</div>
                     <div class="col-sm-8 text-start local-scroll">
                         {{ with .Params.livesite }}
-                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle">Live Website</a>
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">Live Website</a>
                         {{ end }}
                         {{ with .Params.repository }}
-                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle">View in Repo</a>
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">View in Repo</a>
                         {{ end }}
                     </div>
                 </div>
@@ -38,7 +39,7 @@
             
             <div class="col-md-6">
                 <h2 class="h3 font-alt mb-20">Description</h2>
-                {{ .Content }}
+                {{ .Description }}
             </div>
         </div>
 
@@ -58,6 +59,6 @@
 <hr class="mt-0 mb-0 white" />
 <!-- End Divider -->
 
-{{ partial "related.html" . }}
-
+{{ partial "itemnavigation.html" . }}
+<!-- {{ partial "cta.html" . }} -->
 {{ end }}

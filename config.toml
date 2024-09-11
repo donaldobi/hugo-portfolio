@@ -1,7 +1,6 @@
-baseURL = "http://localhost:1313/"
+baseURL = "/"
 languageCode = "en-us"
-title = "Donald Obi - Portfolio"
-theme = ""
+title = "Donald Obi - Web Development & Design Portfolio"
 
 [menu]
   [[menu.main]]
@@ -18,5 +17,5 @@ theme = ""
     weight = 3
 
 [params]
-  description = "Web development and design projects by Donald Obi"
+  description = "Website development and design projects by Donald Obi"
   author = "Donald Obi"
