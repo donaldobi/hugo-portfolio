@@ -3,7 +3,7 @@ title: "Venture Aid Legal"
 date: 2022-01-01
 draft: false
 description: "Conversion-optimized website for a law firm, with focus on paid search traffic (PPC)."
-tags: ["Wordpress", "Web Design"]
+tags: ["Wordpress", "UI/UX"]
 livesite: "https://www.ventureaidlegal.com/"
 number: 11
 images:

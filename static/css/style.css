@@ -6704,7 +6704,7 @@ img.services-image{
 .works-filter a{
     display: inline-block;
     position: relative;
-    margin-left: 48px;
+    margin-left: 25px;
     color: var(--color-gray-1);
     text-decoration: none;
     -webkit-transition: var(--transition-default);

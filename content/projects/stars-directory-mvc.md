@@ -3,7 +3,7 @@ title: "Stars Directory MVC"
 date: 2024-01-01
 draft: false
 description: "Laravel-based project with full Create, read, updated and delete (CRUD) functionality for a Canadian Movie Stars directory."
-tags: ["Laravel", "Bootstrap", "CRUD"]
+tags: ["Laravel", "Bootstrap", "CRUD", "MySQL"]
 repository: "https://bitbucket.org/obidonald/stars-directory-mvc"
 livesite: "https://mvc.donaldobi.site/actors"
 number: 10

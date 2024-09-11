@@ -3,7 +3,7 @@ title: "Tiramisu Dreams"
 date: 2022-01-01
 draft: false
 description: "Modern, interactive WordPress website for a French-inspired dessert services brand"
-tags: ["Wordpress", "Web Design", "UI/UX"]
+tags: ["Wordpress", "UI/UX"]
 livesite: "https://www.tiramisudreams.com/"
 number: 3
 images:

@@ -3,7 +3,7 @@ title: "EduNet Learning Management System"
 date: 2024-01-01
 draft: false
 description: "PHP, MySQL, and JavaScript learning management system (LMS) with course administration (create, read, update, and delete CRUD) and enrollment features."
-tags: ["PHP", "Javascript", "MySQL", "Dashboard"]
+tags: ["PHP", "Javascript", "MySQL"]
 repository: "https://bitbucket.org/obidonald/edunet-learning-management-system-lms"
 livesite: "https://edunet.donaldobi.site/?p=courses"
 number: 4
