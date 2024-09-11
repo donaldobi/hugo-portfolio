@@ -6,9 +6,12 @@ description: "PHP, MySQL, and JavaScript learning management system (LMS) with c
 tags: ["PHP", "Javascript", "MySQL", "Dashboard"]
 repository: "https://bitbucket.org/obidonald/edunet-learning-management-system-lms"
 livesite: "https://edunet.donaldobi.site/?p=courses"
+number: 4
 images:
+  - src: "/images/edunet/edunet.jpg"
+    alt: "Edunet Solutions Portfolio"
   - src: "/images/edunet/landing.jpg"
-    alt: "Edunet Landing Page"
+    alt: "Edunet Solutions Landing Page"
   - src: "/images/edunet/list.jpg"
     alt: "Edunet Courses Page"
   - src: "/images/edunet/course_detail.jpg"

@@ -5,7 +5,10 @@ draft: false
 description: "Responsive website for a public relations and reputation management firm."
 tags: ["Wordpress", "Web Design"]
 livesite: "https://legacypr.com.ng/"
+number: 9
 images:
   - src: "/images/legacy/legacy-pr.jpg"
     alt: "Legacy Media PR"
+  - src: "/images/legacy/legacy-pr-landing.jpg"
+    alt: "Legacy Media PR Landing Page"
 ---

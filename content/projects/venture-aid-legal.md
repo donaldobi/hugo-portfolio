@@ -5,7 +5,12 @@ draft: false
 description: "Conversion-optimized website for a law firm, with focus on paid search traffic (PPC)."
 tags: ["Wordpress", "Web Design"]
 livesite: "https://www.ventureaidlegal.com/"
+number: 11
 images:
   - src: "/images/venture-aid/venture-aid.jpg"
-    alt: "Venture Aid Legal Homepage"
+    alt: "Venture Aid Legal Portfolio"
+  - src: "/images/venture-aid/venture-aid-landing.jpg"
+    alt: "Venture Aid Legal Landing Page"
+  - src: "/images/venture-aid/venture-aid-service.jpg"
+    alt: "Venture Aid Legal Services Page"
 ---

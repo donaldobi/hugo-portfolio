@@ -20,7 +20,7 @@
 
                 <div class="portfolio-item-img">
                     {{ with index .Params.images 0 }}
-                    <a href="{{ $currentPage.RelPermalink }}"><img src="{{ .src }}" width="750" height="620" alt="{{ .alt }}" /></a>
+                    <a href="{{ $.RelPermalink }}"><img src="{{ .src }}" width="750" height="620" alt="{{ .alt }}" /></a>
                     {{ end }}
                 </div>
 

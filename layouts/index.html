@@ -31,7 +31,7 @@
 
             <!-- Works Grid -->
             <div class="row gx-5 mt-n50 mt-sm-n30 mb-50 mb-sm-30" id="work-grid">
-                {{ range .Site.RegularPages }}
+                {{ range sort .Site.RegularPages ".Params.number" "asc" }}
                     <!-- Work Item (Filtered) -->
                     <div class="portfolio-item col-lg-4 mt-50 mt-sm-30 mix {{ range .Params.tags }}{{ . | urlize }} {{ end }}">
                         <div class="portfolio-item-img">

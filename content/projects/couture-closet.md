@@ -3,9 +3,12 @@ title: "Couture Closet E-commerce"
 date: 2024-01-01
 draft: false
 description: "E-commerce platform built using Laravel PHP and JavaScript with user authentication, shopping cart, payment gateway integration, user profile management, and an administative dashboard to manage products, orders, categories, users and reviews. (Group Project)"
-tags: ["E-commerce", "Laravel", "Javascript", "CRUD", "UX Design"]
+tags: ["E-commerce", "Laravel", "Javascript", "UI/UX"]
 repository: "https://github.com/donaldobi/couture-closet"
+number: 2
 images:
+  - src: "/images/couture/couture.jpg"
+    alt: "Couture clostet portfolio"
   - src: "/images/couture/landing.jpg"
     alt: "E-Commerce Homepage"
   - src: "/images/couture/list.jpg"
@@ -16,14 +19,6 @@ images:
     alt: "E-Commerce Cart Page"
   - src: "/images/couture/checkout.jpg"
     alt: "E-Commerce Checkout Page"
-  - src: "/images/couture/user_profile_addresses.jpg"
-    alt: "User Profile Addresses"
-  - src: "/images/couture/user_profile_order_detail.jpg"
-    alt: "User Profile Order Detail"
-  - src: "/images/couture/user_profile_orders.jpg"
-    alt: "User Profile Orders"
-  - src: "/images/couture/user_profile_reviews.jpg"
-    alt: "User Profile Reviews"
   - src: "/images/couture/dashboard_landing.jpg"
     alt: "Admin Dashboard Landing"
   - src: "/images/couture/dashboard_bestsellers.jpg"

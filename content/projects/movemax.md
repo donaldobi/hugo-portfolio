@@ -3,10 +3,13 @@ title: "Movemax Logistics"
 date: 2024-01-01
 draft: false
 description: "Movemax Logistics is a Laravel PHP, JavaScript, Bootstrap web application for shipping estimates and customer inquiry management. It provides shipping estimates and customer inquiry management for a logistics company."
-tags: ["Laravel", "PHP", "Javascript", "Bootstrap", "CRUD"]
+tags: ["Laravel", "PHP", "Javascript", "Bootstrap"]
 repository: "https://github.com/donaldobi/movemax-logistics"
 livesite: "https://www.movemax.com.ng/"
+number: 1
 images:
+  - src: "/images/movemax/movemax_main.jpg"
+    alt: "Movemax Portfolio"
   - src: "/images/movemax/header_about.jpg"
     alt: "Homepage Header and About Section"
   - src: "/images/movemax/services.jpg"
