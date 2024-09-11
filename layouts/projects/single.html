@@ -11,14 +11,15 @@
                 <h2 class="h3 font-alt mb-20">Project Details</h2>
                 <div class="row">
                     <div class="col-sm-4">Date:</div>
-                    <div class="col-sm-8">{{ .Date.Format "January 2, 2006" }}</div>
+                    <div class="col-sm-8">{{ .Date.Format "2006" }}</div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-sm-4">Technology:</div>
                     <div class="col-sm-8">
-                        {{ range .Params.tags }}
-                        <span class="tag">{{ . }}</span>
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if $index }}, {{ end }}
+                            <span class="tag">{{ $tag }}</span>
                         {{ end }}
                     </div>
                 </div>

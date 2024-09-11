@@ -3,7 +3,7 @@ title: "Legacy Media PR"
 date: 2022-01-01
 draft: false
 description: "Responsive website for a public relations and reputation management firm."
-tags: ["Wordpress", "UI/UX"]
+tags: ["Wordpress", "UI UX"]
 livesite: "https://legacypr.com.ng/"
 number: 9
 images:
