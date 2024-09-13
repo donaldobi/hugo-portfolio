@@ -2,7 +2,7 @@
 title: "Couture Closet E-commerce"
 date: 2024-01-01
 draft: false
-description: "E-commerce platform built using Laravel PHP and JavaScript with user authentication, shopping cart, payment gateway integration, user profile management, and an administative dashboard to manage products, orders, categories, users and reviews. (Group Project)"
+description: "E-commerce platform built using Laravel PHP and JavaScript with user authentication, shopping cart, payment gateway integration, user profile management, and an administative dashboard to manage products, orders, categories, users and reviews. (Group Project, Web Development Diploma | University of Winnipeg)"
 tags: ["eCommerce", "Laravel", "Javascript", "UI UX"]
 repository: "https://github.com/donaldobi/couture-closet"
 number: 2
