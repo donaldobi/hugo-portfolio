@@ -9,10 +9,10 @@ number: 3
 images:
   - src: "/images/tiramisu/tiramisu.jpg"
     alt: "Tiramisu Dreams Portfolio"
-  - src: "/images/tiramisu/tiramisu-landing.jpg"
+  - src: "/images/tiramisu/tiramisu-landing-min.jpg"
     alt: "Tiramisu Dreams Homepage"
-  - src: "/images/tiramisu/tiramisu-menu.jpg"
+  - src: "/images/tiramisu/tiramisu-menu-min.jpg"
     alt: "Tiramisu Dreams Menu"
-  - src: "/images/tiramisu/tiramisu-service.jpg"
+  - src: "/images/tiramisu/tiramisu-service-min.jpg"
     alt: "Tiramisu Dreams Services"
 ---
