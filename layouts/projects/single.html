@@ -25,13 +25,13 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-sm-4">Services:</div>
+                    <div class="col-sm-4">Links:</div>
                     <div class="col-sm-8 text-start local-scroll">
                         {{ with .Params.livesite }}
-                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">Live Website</a>
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y" target="_blank">View Website</a>
                         {{ end }}
                         {{ with .Params.repository }}
-                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">View in Repo</a>
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y" target="_blank">View in Repo</a>
                         {{ end }}
                     </div>
                 </div>

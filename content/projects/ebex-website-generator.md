@@ -8,6 +8,7 @@ To address user drop-off rates, we streamlined template requirements with predef
 
 As the UI/UX Lead, I identified user pain points, implemented data-driven solutions, and tested enhancements, resulting in significant improvements in user retention and satisfaction."
 tags: ["UI UX", "SaaS"]
+livesite: "https://web.archive.org/web/20220809144248/https://ebex.ng/"
 number: 7
 images:
   - src: "/images/ebex/ebex.jpg"
