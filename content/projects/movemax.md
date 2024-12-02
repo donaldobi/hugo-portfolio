@@ -6,7 +6,7 @@ description: "Movemax Logistics is a Laravel PHP, JavaScript, Bootstrap web appl
 tags: ["Laravel", "PHP", "Javascript", "Bootstrap"]
 repository: "https://github.com/donaldobi/movemax-logistics"
 livesite: "https://www.movemax.com.ng/"
-number: 1
+number: 2
 images:
   - src: "/images/movemax/movemax_main.jpg"
     alt: "Movemax Portfolio"

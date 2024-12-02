@@ -5,7 +5,7 @@ draft: false
 description: "Vue.js and Ajax front-end interacting with PHP REST API, demonstrating CRUD operations."
 tags: ["Vuejs", "Ajax", "Bootstrap", "CRUD"]
 repository: "https://bitbucket.org/obidonald/vue-user-management-crud/src/main/"
-number: 5
+number: 12
 images:
   - src: "/images/vue-crud/vue.jpg"
     alt: "Vue.js User Management Portfolio"
