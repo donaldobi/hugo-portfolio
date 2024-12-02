@@ -9,8 +9,8 @@ number: 8
 images:
   - src: "/images/ronnie-dee/ronnie-dee.jpg"
     alt: "Ronnie Dee Events Portfolio"
-  - src: "/images/ronnie-dee/ronnie-dee-landing.jpg"
+  - src: "/images/ronnie-dee/ronnie-dee-landing-min.jpg"
     alt: "Ronnie Dee Events Landing Page"
-  - src: "/images/ronnie-dee/ronnie-dee-center.jpg"
+  - src: "/images/ronnie-dee/ronnie-dee-center-min.jpg"
     alt: "Ronnie Dee Events Center Page"
 ---

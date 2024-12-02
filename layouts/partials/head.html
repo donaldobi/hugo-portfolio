@@ -1,17 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="">
-<meta name="author" content="">
-
 <title>{{ .Title }}</title>
-
+<!-- Meta description -->
+{{ if eq .Type "home" }}
+    <meta name="description" content="{{ .Params.description | htmlEscape }}" />
+{{ else }}
+    {{ $description := .Description | truncate 90 | htmlEscape }}
+    <meta name="description" content="{{ $description }}" />
+{{ end }}
+<!-- <meta name="description" content=""> -->
+<meta name="author" content="">
 <!-- Favicons -->
 <link rel="shortcut icon" href="/images/favicon.png">
-
 <!-- CSS -->
-<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/style-responsive.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/vertical-rhythm.min.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/icomoon.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
