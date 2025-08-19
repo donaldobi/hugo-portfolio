@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+{{ partial "projecthero.html" . }}
+
+<section id="project" class="section page-section bg-dark-1 light-content">
+    <div class="container relative">
+        <!-- <h1 class="hs-title-2 font-alt uppercase mb-40">{{ .Title }}</h1> -->
+        
+        <div class="row mb-80 mb-sm-40">
+            <div class="col-md-6 mb-sm-40">
+                <h2 class="h3 font-alt mb-20">Project Details</h2>
+                <div class="row">
+                    <div class="col-sm-4">Date:</div>
+                    <div class="col-sm-8">{{ .Date.Format "2006" }}</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">Tags:</div>
+                    <div class="col-sm-8">
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if $index }}, {{ end }}
+                            <span class="tag">{{ $tag }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">Project URL:</div>
+                    <div class="col-sm-8 text-start local-scroll">
+                        {{ with .Params.livesite }}
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">Live Website</a>
+                        {{ end }}
+                        {{ with .Params.repository }}
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle" data-btn-animate="y">View in Repo</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <h2 class="h3 font-alt mb-20">Description</h2>
+                {{ .Description }}
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="mt-10 mb-40 white" />
+        <!-- End Divider -->
+
+        <div class="mb-80 mb-sm-40">
+            <div class="mb-n30">
+                <div class="row">
+                    <!-- Photo Item -->
+                    {{ range $index, $image := .Params.images }}
+                    {{ if ne $index 0 }} <!-- Skip the first image -->
+                    <div class="col-md-4">
+                        <div class="post-prev-img rounded-0 mb-30 wow fadeScaleIn animated" data-wow-offset="0"
+                            style="visibility: visible; animation-name: fadeScaleIn;">
+                            <a href="{{ $image.src }}" class="lightbox mfp-image"><img src="{{ $image.src }}" alt="{{ $image.alt }}"></a>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    <!-- End Photo Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 white" />
+<!-- End Divider -->
+
+{{ partial "itemnavigation.html" . }}
+{{ end }}

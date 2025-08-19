@@ -1,0 +1,168 @@
+{{ define "main" }}
+
+{{ partial "projecthero.html" . }}
+
+<section id="project" class="section page-section bg-dark-1 light-content">
+    <div class="container relative">
+        <div class="row mb-80 mb-sm-40 gx-5">
+            <div class="col-md-5 mb-sm-40">
+                <h2 class="h3 font-alt mb-20">Project Details</h2>
+                <hr>
+                <hr class="mt-0 mb-30 white" />
+                <div class="row">
+                    <div class="col-2">
+                        Date:
+                    </div>
+                    <div class="col-10">{{ .Date.Format "2006" }}</div>
+                </div>
+                <hr>
+                <hr class="mt-0 mb-30 white" />
+                <div class="row">
+                    <div class="col-2">
+                        Tags:
+                    </div>
+                    <div class="col-10">
+                        {{ range $index, $tag := .Params.tags }}
+                        {{ if $index }}, {{ end }}
+                        <span class="tag">{{ $tag }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+                <hr>
+                <hr class="mt-0 mb-30 white" />
+                {{ if .Params.search_rankings }}
+                <div class="row  mb-30">
+                    <!-- <div h3 class="h4 font-alt mb-20">Search Rankings</div> -->
+                    <div class="col-sm-12">
+                        <table class="table light-content" style="background-color:#111111;">
+                            <thead>
+                                <tr>
+                                    <th>Relevant Search Query</th>
+                                    <th>Position</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-top: 1px solid white;">
+                                {{ range .Params.search_rankings }}
+                                <tr style="border-top: 1px solid white;">
+                                    <td>{{ .query }}</td>
+                                    <td>{{ .position }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {{ end }}
+
+                <div class="row">
+                    <div class="col-4 d-flex align-items-center">Project:</div>
+                    <div class="col-8 d-flex align-items-center text-start local-scroll">
+                        {{ with .Params.livesite }}
+                        <a href="{{ . }}" class="btn btn-mod btn-border-w btn-large btn-circle"
+                            data-btn-animate="y"  target="_blank">Page/Project URL</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 ml-md-5">
+                <h2 class="h3 font-alt mb-20">Description</h2>
+                <p>{{ .Description }}</p>
+
+                {{ with .Content }}
+                <div class="row mb-20 mb-sm-40">
+                    <div class="col-md-12">
+                        {{ . }}
+                    </div>
+                </div>
+                {{ end }}
+
+
+                {{ if .Params.key_achievements }}
+                <div class="row mb-40 mb-sm-40">
+                    <div class="col-md-12">
+                        <h3 class="h4 font-alt mb-20">Marketing Tactics &amp; Outcomes</h3>
+                        <table class="table light-content" style="background-color: #111111;">
+                            <thead>
+                                <tr>
+                                    <th>Tactic</th>
+                                    <th>Outcome</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-top: 1px solid white;">
+                                {{ range .Params.key_achievements }}
+                                <tr style="border-top: 1px solid white;">
+                                    <td>{{ .tactic }}</td>
+                                    <td>{{ .outcome }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+<!-- Divider -->
+<hr class="mt-0 mb-0 white" />
+<!-- End Divider -->
+        <!-- If content has Videos Section -->
+        <!-- Row -->
+        
+        <div class="row mt-40 mb-40 mb-sm-40 mt-sm-40 gx-2">
+            <div class="col-5">
+                <h2 class="h3 font-alt mb-20">Campaign Videos</h2>
+            </div>
+            <div class="col-7"> <p>Selected videos from various campaigns for Mr. Calzone.</p> </div>
+        </div>
+        <div class="row mb-n40">
+            {{ if .Params.videos }}
+                {{ range .Params.videos }}
+                    <!-- Col -->
+                    <div class="col-md-4 mb-40">
+                        <div class="video">
+                            <video preload="auto" loop controls="controls" poster="{{ .poster }}">
+                                <source src="{{ .src }}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                {{ end }}
+            {{ end }}
+        </div>
+        
+        <!-- End Row -->
+        <!-- End Videos Section -->
+
+        <!-- Divider -->
+        <hr class="mt-10 mb-20 white" />
+        <!-- End Divider -->
+
+        <div class="mb-80 mb-sm-40">
+            <div class="mb-n30">
+                <div class="row">
+                    <!-- Photo Item -->
+                    {{ range $index, $image := .Params.images }}
+                    {{ if ne $index 0 }} <!-- Skip the first image -->
+                    <div class="col-md-4">
+                        <div class="post-prev-img rounded-0 mb-30 wow fadeScaleIn animated" data-wow-offset="0"
+                            style="visibility: visible; animation-name: fadeScaleIn;">
+                            <a href="{{ $image.src }}" class="lightbox mfp-image"><img src="{{ $image.src }}" alt="{{ $image.alt }}"></a>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    <!-- End Photo Item -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 white" />
+<!-- End Divider -->
+
+{{ partial "itemnavigation.html" . }}
+{{ end }}
