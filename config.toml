@@ -1,6 +1,8 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Donald Obi - Web Development & Design Portfolio"
+enableRobotsTXT = true
+disableKinds = ["sitemap"]
 
 [menu]
   [[menu.main]]
